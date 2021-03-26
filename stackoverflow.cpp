@@ -167,3 +167,4 @@ char get_unscrambled_char(const std::array<uchar, N> & a) {
 #define ENCSTR(STR) \
     strobf::obfuscated_string<RNG_SEED, strobf::array_info<decltype(STR)>::size>{STR}
 
+// must be use Optimization level -O2, otherwise not working
